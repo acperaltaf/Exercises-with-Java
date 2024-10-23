@@ -1,3 +1,4 @@
+package FizzBuzz;
 /*
  * FizzBuzz:
 
