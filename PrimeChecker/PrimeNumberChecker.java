@@ -3,13 +3,17 @@ package PrimeChecker;
 public class PrimeNumberChecker {
     
     public static boolean isPrime(int number) {
-        boolean isPrime = true;
-        for (int i = 2; i < number; i++) {
+        // boolean isPrime = true;
+        if (number < 2) {
+            return false;
+        }
+
+        for (int i = 2; i <= Math.sqrt(number); i++) {
             if (number % i == 0) {
-                isPrime = false;
+                return false;
             }
         }
-        return isPrime;
+        return true;
     }
 
     public static void main(String[] args) {
