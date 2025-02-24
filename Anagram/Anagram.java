@@ -19,6 +19,7 @@ public class Anagram {
         Arrays.sort(arrStr2);
 
         return Arrays.equals(arrStr1, arrStr2);
+        // return arrStr1 == arrStr2;
     }
     public static void main(String[] args) {
         /* Examples:
